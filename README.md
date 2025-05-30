@@ -100,9 +100,9 @@ genome: "data/genome.fa"
 annotation: "data/annotation.gtf"
 
 2. Run the Pipeline
-'''bash
+```bash
 snakemake --cores 4 --use-conda
-'''
+```
 This will:
 
 -Download SRA datasets
@@ -137,4 +137,16 @@ snakemake --dag | dot -Tpng > rulegraph.png
 This will generate a graphical representation of how the steps depend on each other.
 
 ## 🙏 Credits
-This pipeline was developed as part of a Ginger lncRNA discovery project. It integrates tools like FEELnc, CPAT, and BLAST+ using Snakemake to ensure reproducibility, modularity, and scalability.
+This pipeline was developed as part of a Ginger lncRNA discovery project carried out by the Bioinformatics and Integrative Genomics (BIG) Facility,
+ICAR-Indian Institute of Spices Research, Kozhikode.
+
+The work was conducted under the National Network Project on Crop Bioinformatics (NNP) coordinated by NIPGR, New Delhi.
+
+It integrates tools like FEELnc, CPAT, lncFinder, and BLAST+ into a reproducible and modular Snakemake workflow for effective discovery and characterization of long non-coding RNAs in plants.
+
+## 📬 Contact
+If you have any issues, suggestions, or need help, please:
+
+Raise an issue on the GitHub repository
+
+Email us at: bigfacilityiisr@gmail.com
