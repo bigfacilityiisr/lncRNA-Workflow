@@ -1,0 +1,10 @@
+name: cpat
+channels:
+  - bioconda
+  - conda-forge
+  - defaults
+dependencies:
+  - python=2.7
+  - pysam=0.15.4
+  - cpat
+

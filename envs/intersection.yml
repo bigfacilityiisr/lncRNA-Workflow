@@ -1,0 +1,9 @@
+name: intersection
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  - r-dplyr
+  - r-readr
+  - r-vroom

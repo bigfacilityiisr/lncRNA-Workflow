@@ -1,0 +1,6 @@
+name: stringtie_assembly
+channels:
+  - bioconda
+  - conda-forge
+dependencies:
+  - stringtie=2.2.3

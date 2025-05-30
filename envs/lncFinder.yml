@@ -1,0 +1,15 @@
+name: lncFinder
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  - r-base
+  - r-seqinr
+  - r-caret
+  - r-e1071
+  - r-tidyverse
+  - r-r.utils
+  - r-devtools
+  - r-remotes
+

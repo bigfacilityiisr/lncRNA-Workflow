@@ -1,0 +1,6 @@
+name: star_alignment
+channels:
+  - bioconda
+  - conda-forge
+dependencies:
+  - star

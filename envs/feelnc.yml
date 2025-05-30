@@ -1,0 +1,13 @@
+name: feelnc
+channels:
+  - bioconda
+  - conda-forge
+  - defaults
+dependencies:
+  - perl
+  - perl-app-cpanminus
+  - perl-parallel-forkmanager
+  - perl-bioperl  # <-- this is what provides Bio::DB::Fasta
+  - coreutils
+  - git  
+

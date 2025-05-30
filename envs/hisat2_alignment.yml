@@ -1,0 +1,6 @@
+name: hisat2_alignment
+channels:
+  - bioconda
+  - conda-forge
+dependencies:
+  - hisat2

@@ -1,0 +1,9 @@
+name: preprocessing
+channels:
+  - bioconda
+  - conda-forge
+dependencies:
+  - fastqc==0.12.1
+  - cutadapt==4.5
+  - trimmomatic
+  - bbmap==39.01
