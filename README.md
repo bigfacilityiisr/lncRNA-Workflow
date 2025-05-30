@@ -71,5 +71,5 @@ The figure below shows the structure of the pipeline:
 Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/lncRNA-Workflow.git
+git clone https://github.com/bigfacilityiisr/lncRNA-Workflow.git
 cd lncRNA-Workflow
