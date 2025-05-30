@@ -80,7 +80,7 @@ Clone the repository:
 ```bash
 git clone https://github.com/bigfacilityiisr/lncRNA-Workflow.git
 cd lncRNA-Workflow
-
+```
 
 ## 🚀 How to Use
 
@@ -100,8 +100,9 @@ genome: "data/genome.fa"
 annotation: "data/annotation.gtf"
 
 2. Run the Pipeline
+'''bash
 snakemake --cores 4 --use-conda
-
+'''
 This will:
 
 -Download SRA datasets
@@ -114,7 +115,7 @@ This will:
 
 -Output a final list of confident lncRNA transcripts
 
-📦 Output
+## 📦 Output
 You’ll get the following:
 
 ✅ Assembled transcripts (.gtf)
@@ -129,11 +130,11 @@ You’ll get the following:
 
 ✅ Log files for each rule
 
-📊 Visualization
+## 📊 Visualization
 To visualize the entire workflow as a DAG (Directed Acyclic Graph):
 
 snakemake --dag | dot -Tpng > rulegraph.png
 This will generate a graphical representation of how the steps depend on each other.
 
-🙏 Credits
+## 🙏 Credits
 This pipeline was developed as part of a Ginger lncRNA discovery project. It integrates tools like FEELnc, CPAT, and BLAST+ using Snakemake to ensure reproducibility, modularity, and scalability.
