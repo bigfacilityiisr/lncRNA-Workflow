@@ -92,9 +92,7 @@ Path to the reference genome and annotation file
 Optional: Change paths and parameters if needed
 
 Example:
-yaml
-Copy
-Edit
+
 samples:
   - SRR12345678
   - SRR87654321
