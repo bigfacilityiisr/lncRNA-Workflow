@@ -21,7 +21,14 @@ This pipeline is designed to start directly from **SRA accession IDs** and autom
 
 ## 📖 Overview
 
-lncRNAs (long non-coding RNAs) are transcripts longer than 200 nucleotides that do not encode proteins but often regulate gene expression. This pipeline provides a **start-to-finish workflow**: from downloading RNA-seq data (via SRA) to predicting high-confidence lncRNAs using multiple tools and filters.
+lncRNAs (long non-coding RNAs) are transcripts longer than 200 nucleotides that do not encode proteins but are involved in regulating gene expression, chromatin organization, and other cellular processes. 
+
+This workflow provides a comprehensive method to:
+- Download RNA-seq data from NCBI SRA
+- Preprocess and align reads
+- Assemble transcripts
+- Apply multiple coding potential filters
+- Identify high-confidence lncRNAs
 
 ---
 
@@ -73,3 +80,62 @@ Clone the repository:
 ```bash
 git clone https://github.com/bigfacilityiisr/lncRNA-Workflow.git
 cd lncRNA-Workflow
+
+
+## 🚀 How to Use
+
+1. Edit the config.yaml file
+
+Provide:
+A list of SRA accession IDs under samples
+Path to the reference genome and annotation file
+Optional: Change paths and parameters if needed
+
+Example:
+yaml
+Copy
+Edit
+samples:
+  - SRR12345678
+  - SRR87654321
+genome: "data/genome.fa"
+annotation: "data/annotation.gtf"
+
+2. Run the Pipeline
+snakemake --cores 4 --use-conda
+
+This will:
+
+-Download SRA datasets
+
+-Preprocess and align reads
+
+-Assemble transcripts
+
+-Predict and filter lncRNAs
+
+-Output a final list of confident lncRNA transcripts
+
+📦 Output
+You’ll get the following:
+
+✅ Assembled transcripts (.gtf)
+
+✅ Output from FEELnc, CPAT, lncFinder
+
+✅ BLAST results against UniProt
+
+✅ Filtered intersection of predictions
+
+✅ Final set of high-confidence lncRNAs
+
+✅ Log files for each rule
+
+📊 Visualization
+To visualize the entire workflow as a DAG (Directed Acyclic Graph):
+
+snakemake --dag | dot -Tpng > rulegraph.png
+This will generate a graphical representation of how the steps depend on each other.
+
+🙏 Credits
+This pipeline was developed as part of a Ginger lncRNA discovery project. It integrates tools like FEELnc, CPAT, and BLAST+ using Snakemake to ensure reproducibility, modularity, and scalability.
