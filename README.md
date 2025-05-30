@@ -140,7 +140,7 @@ This will generate a graphical representation of how the steps depend on each ot
 This pipeline was developed as part of a Ginger lncRNA discovery project carried out by the Bioinformatics and Integrative Genomics (BIG) Facility,
 ICAR-Indian Institute of Spices Research, Kozhikode.
 
-The work was conducted under the National Network Project on Crop Bioinformatics (NNP) coordinated by NIPGR, New Delhi.
+The work was conducted under the National Network Project on Crop Bioinformatics:NNP of NIPGR, New Delhi.
 
 It integrates tools like FEELnc, CPAT, lncFinder, and BLAST+ into a reproducible and modular Snakemake workflow for effective discovery and characterization of long non-coding RNAs in plants.
 
