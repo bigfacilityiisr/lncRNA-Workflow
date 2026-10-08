@@ -16,7 +16,7 @@ rule raw_fastqc:
     shell:
         """
         fastqc {input.r1} -o {params.outdir}
-        fastqc {input.r1} -o {params.outdir}
+        fastqc {input.r2} -o {params.outdir}
         """ 
 
 rule cutadapt_trim:
