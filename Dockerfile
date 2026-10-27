@@ -1,4 +1,4 @@
-```dockerfile
+
 FROM condaforge/miniforge3:24.9.2-0
 
 LABEL maintainer="bigfacilityiisr"
@@ -24,4 +24,3 @@ COPY . .
 ENV PYTHONUNBUFFERED=1
 
 CMD ["--help"]
-```
