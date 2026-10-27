@@ -14,7 +14,6 @@ RUN micromamba install -y -n base \
     git \
     curl \
     wget \
-    procps \
     ca-certificates \
     && micromamba clean --all --yes
 
