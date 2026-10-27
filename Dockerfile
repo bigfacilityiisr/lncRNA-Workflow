@@ -1,26 +1,27 @@
-FROM mambaorg/micromamba:1.5.8
+```dockerfile
+FROM condaforge/miniforge3:24.9.2-0
 
 LABEL maintainer="bigfacilityiisr"
 LABEL description="Container environment for LncRNA-Workflow"
 
-USER $MAMBA_USER
-
-RUN micromamba install -y -n base \
+RUN conda install -n base -y \
     -c conda-forge \
     -c bioconda \
     python=3.11 \
     snakemake=7.32.4 \
+    mamba \
     pandas \
     git \
     curl \
     wget \
     ca-certificates \
-    && micromamba clean --all --yes
+    && conda clean -afy
 
 WORKDIR /opt/lncRNA-Workflow
 
-COPY --chown=$MAMBA_USER:$MAMBA_USER . .
+COPY . .
 
 ENV PYTHONUNBUFFERED=1
 
 CMD ["--help"]
+```
