@@ -4,10 +4,10 @@ rule raw_fastqc:
         r1 = "data/{id}_1.fastq.gz",
         r2 = "data/{id}_2.fastq.gz"
     output:
-        "output/fastq/raw/{id}_1.html",
-        "output/fastq/raw/{id}_1.zip",
-        "output/fastq/raw/{id}_2.html",
-        "output/fastq/raw/{id}_2.zip"
+        "output/fastqc/raw/{id}_1.html",
+        "output/fastqc/raw/{id}_1.zip",
+        "output/fastqc/raw/{id}_2.html",
+        "output/fastqc/raw/{id}_2.zip"
     conda:
         "../envs/preprocessing.yml"
     threads: 5
