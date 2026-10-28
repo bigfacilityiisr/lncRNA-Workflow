@@ -30,7 +30,7 @@ This workflow provides a comprehensive method to:
 - Preprocess and align reads
 - Assemble transcripts
 - Apply multiple coding potential filters
-- Identify high-confidence lncRNAs
+- Identify consensus set of lncRNAs
 
 ---
 
