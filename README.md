@@ -6,7 +6,7 @@ This pipeline is designed to start directly from **SRA accession IDs** and autom
 
 ---
 
-## 🧾 Table of Contents
+## Table of Contents
 
 - [Overview](#overview)
 - [Workflow Summary](#workflow-summary)
@@ -21,7 +21,7 @@ This pipeline is designed to start directly from **SRA accession IDs** and autom
 
 ---
 
-## 📖 Overview
+## Overview
 
 lncRNAs (long non-coding RNAs) are transcripts longer than 200 nucleotides that do not encode proteins but are involved in regulating gene expression, chromatin organization, and other cellular processes. 
 
@@ -34,7 +34,7 @@ This workflow provides a comprehensive method to:
 
 ---
 
-## 🔁 Workflow Summary
+## Workflow Summary
 
 The figure below shows the structure of the pipeline:
 
@@ -56,7 +56,7 @@ The figure below shows the structure of the pipeline:
 
 ---
 
-## 💻 Requirements
+## Requirements
 
 - **Snakemake ≥ 7.0**
 - **Python ≥ 3.6**
