@@ -142,6 +142,18 @@ docker run --rm \
     --cores 4 --use-conda -n
 ```
 
+Execute the workflow:
+
+```bash
+docker run --rm \
+    -v "$PWD:/opt/lncRNA-Workflow" \
+    -w /opt/lncRNA-Workflow \
+    lncsnake:latest \
+    snakemake --snakefile Snakefile \
+    --configfile config/config.yml \
+    --cores 4 --use-conda
+```
+
 If you use Docker to execute the workflow, ensure that the configuration, input files, reference files, and required model resources are accessible inside the container. Configure persistent output directories so that results remain available on the host.
 
 The Dockerfile and the repository documentation should be kept synchronized as the workflow changes.
