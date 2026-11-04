@@ -1,10 +1,10 @@
 rule FEELncRNA:
     input:
-        gtf = "/media/hp/DATADRIVE1/lncRNA-Workflow/output/assembled/stringtie/{id}_assembled.gtf",
+        gtf = "output/assembled/stringtie/{id}_assembled.gtf",
         annotation = config['annotation']['gtf']  # From config.yaml
     output:
-        filtered_gtf = "/media/hp/DATADRIVE1/lncRNA-Workflow/output/lncRNA/FEELnc/{id}_FEELncRNA.gtf",
-        filtered_txt = "/media/hp/DATADRIVE1/lncRNA-Workflow/output/lncRNA/FEELnc/{id}_FEELncRNA.txt"
+        filtered_gtf = "output/lncRNA/FEELnc/{id}_FEELncRNA.gtf",
+        filtered_txt = "output/lncRNA/FEELnc/{id}_FEELncRNA.txt"
     conda:
         "../envs/feelnc.yml"
     log:
