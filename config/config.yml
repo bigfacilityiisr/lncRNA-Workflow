@@ -11,10 +11,8 @@ sample_table: "config/subset.tsv"
 # You can also set up parameters for analyses here, s.t. you can configure and edit all your parameters from this file instead of going to each relevant rule.
 
 reference:
-  ftp: "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/018/446/385/GCF_018446385.1_Zo_v1.1/GCF_018446385.1_Zo_v1.1_genomic.fna.gz"
   fasta: "data/GCF_018446385.1_Zo_v1.1_genomic.fasta"
 annotation:
-  ftp: "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/018/446/385/GCF_018446385.1_Zo_v1.1/GCF_018446385.1_Zo_v1.1_genomic.gtf.gz"
   gtf: "data/GCF_018446385.1_Zo_v1.1_genomic.gtf"
 
 # fastq-dump:
