@@ -94,7 +94,7 @@ Before running LncSnake, edit `config/config.yml` to specify the input samples, 
 
 The `sample_table` field must point to a tab-separated sample metadata file containing an `SRA_ID` column. Each row should correspond to an RNA-seq sample to be processed.
 
-The reference genome and annotation must be provided using the nested reference and annotation fields expected by the configuration file. Update all paths to match the files available in your working directory.
+The reference genome and annotation must be provided in the `data` folder using the nested reference and annotation fields expected by the configuration file. Update all paths to match the files available in your working directory.
 
 Refer to the example configuration and sample table included in the repository for the required structure.
 
@@ -198,11 +198,9 @@ Create a separate configuration file named `config/test_config.yml`:
 sample_table: "config/test_sample.tsv"
 
 reference:
-  ftp: "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/018/446/385/GCF_018446385.1_Zo_v1.1/GCF_018446385.1_Zo_v1.1_genomic.fna.gz"
   fasta: "data/GCF_018446385.1_Zo_v1.1_genomic.fasta"
 
 annotation:
-  ftp: "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/018/446/385/GCF_018446385.1_Zo_v1.1/GCF_018446385.1_Zo_v1.1_genomic.gtf.gz"
   gtf: "data/GCF_018446385.1_Zo_v1.1_genomic.gtf"
 
 cutadapt:
@@ -212,6 +210,7 @@ cutadapt:
 star:
   sjdbOverhang: 100
 ```
+Make sure to store the downloaded genome and reference files in the `data' folder.
 
 This configuration uses the ginger reference genome and annotation specified in the main configuration, while restricting the workflow to one sample.
 
