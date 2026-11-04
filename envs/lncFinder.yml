@@ -4,7 +4,7 @@ channels:
   - bioconda
   - defaults
 dependencies:
-  - r-base=4.3
+  - r-base=4.5.3
   - r-seqinr
   - r-caret
   - r-e1071
@@ -12,4 +12,4 @@ dependencies:
   - r-r.utils
   - r-devtools
   - r-remotes
-
+  post-deploy: "lncfinder.post-deploy.sh"
