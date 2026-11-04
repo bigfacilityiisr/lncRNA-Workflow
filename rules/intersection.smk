@@ -14,7 +14,7 @@ rule intersection:
         "logs/intersection/{id}_intersection.log"  
     shell:
         """
-        Rscript {params.script} {input.candidate_lncRNA} {input.candidate_lncRNA} {input.cpat_output} {input.LncFinder} {input.uniprot_output} {output} > {log} 2>&1
+        Rscript {params.script} {input.candidate_lncRNA} {input.cpat_output} {input.LncFinder} {input.uniprot_output} {output} > {log} 2>&1
         """
 
 
