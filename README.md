@@ -210,7 +210,7 @@ cutadapt:
 star:
   sjdbOverhang: 100
 ```
-Make sure to store the downloaded genome and reference files in the `data' folder.
+Make sure to store the downloaded genome and reference files in the `data` folder.
 
 This configuration uses the ginger reference genome and annotation specified in the main configuration, while restricting the workflow to one sample.
 
